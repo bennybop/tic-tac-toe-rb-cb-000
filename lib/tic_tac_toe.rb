@@ -34,7 +34,7 @@ end
 	end
 
 
-	def position_taken?(board, location)
+	def position_taken?(board, index)
 	  board[location] != " " && board[location] != ""
 	end
 
