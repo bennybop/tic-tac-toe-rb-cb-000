@@ -115,7 +115,7 @@ end
 			turn(board)
 end
 		if draw?(board) == true
-			puts "Cats Game!"
+			puts "Cat's Game!"
 		else won?(board)
 	    puts "Congratulations #{winner(board)}!"
 
