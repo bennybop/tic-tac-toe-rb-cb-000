@@ -62,7 +62,7 @@ end
 			end
 		end
 	end
-	
+
 
 
 	def turn_count(board)
@@ -144,7 +144,7 @@ end
 	  until over?(board) == true
 			turn(board)
 		end
-		if draw?(board) == true 
+		if draw?(board) == true
 			puts "Cats Game!"
 		else won?(board)
 	    puts "Congratulations #{winner(board)}!"
