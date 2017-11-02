@@ -150,5 +150,6 @@ end
 	    puts "Congratulations #{winner(board)}!"
 
 	  end
-	
+	end
+
 	end
