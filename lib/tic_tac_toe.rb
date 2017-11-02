@@ -19,19 +19,20 @@ WIN_COMBINATIONS = [
 	  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 	end
 
-	def input_to_index(user_input)
-user_input.to_i - 1
+	def input_to_index(input)
+		s = input.to_i
+		s - 1
 
-	end
+end
 
 
 
-	def move(board, location, current_player)
-	  board[location.to_i - 1] = current_player
+	def move(board, index, char)
+		board[index] = char
 		turn_count(board)
 		display_board(board)
-
 	end
+	
 
 	def position_taken?(board, location)
 	  board[location] != " " && board[location] != ""
