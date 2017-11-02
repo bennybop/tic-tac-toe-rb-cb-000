@@ -82,22 +82,16 @@ end
 
 
 	def won?(board)
-		WIN_COMBINATIONS. find do |win_combo| 
+		WIN_COMBINATIONS. find do |win_combo|
 			board[win_combo[0]] == board[win_combo[1]] && board[win_combo[0]] == board[win_combo[2]] && position_taken?(board, win_combo[1])
 		end
 	end
-	
-
-
 
 	def full?(board)
-	  if board.detect {|i| i == " " || i == nil}
-	    return false
-	  else
-	    return true
-	  end
+	 board.none? do |i|
+		 i == " " || i.nil?
+	 end
 	end
-
 
 	def draw?(board)
 	won?(board) == nil && full?(board) == true
@@ -105,17 +99,13 @@ end
 
 
 	def over?(board)
-	  if draw?(board) || won?(board)
-	    return true
-	  else
-	    return false
-	  end
+	 draw?(board) == true || won?(board) != nil
 	end
 
 
 	def winner(board)
-	  if win_combination = won?(board)
-	    board[win_combination.first]
+	  if won?(board) != nil
+	   winner = board[won?(board)[0]] 
 	  end
 	end
 
