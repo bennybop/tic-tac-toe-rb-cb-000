@@ -116,11 +116,7 @@ end
 
 
 	def draw?(board)
-	  if !won?(board) && full?(board)
-	    return true
-	  else
-	    return false
-	  end
+	won?(board) == nil && ful?(board) == true 
 	end
 
 
@@ -150,6 +146,6 @@ end
 	    puts "Congratulations #{winner(board)}!"
 
 	  end
-	
+
 
 	end
