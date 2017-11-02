@@ -67,8 +67,8 @@ end
 
 	def turn_count(board)
 	  counter = 0
-	  board.each do |i|
-	    if i == "X" || i == "O"
+	  board.each do |move|
+	    if move == "X" || move == "O"
 	      counter += 1
 	    end
 	  end
