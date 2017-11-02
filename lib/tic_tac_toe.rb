@@ -28,7 +28,6 @@ user_input.to_i - 1
 
 	def move(board, location, current_player)
 	  board[location.to_i - 1] = current_player
-		turn_count
 
 	end
 
