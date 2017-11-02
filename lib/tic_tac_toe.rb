@@ -26,11 +26,10 @@ user_input.to_i - 1
 
 
 
-def move(index, char = "X")
-	@board[index] = char
-	turn_count
-	display_board
-end
+	def move(board, location, current_player)
+	  board[location.to_i - 1] = current_player
+
+	end
 
 	def position_taken?(board, location)
 	  board[location] != " " && board[location] != ""
