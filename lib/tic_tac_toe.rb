@@ -32,7 +32,7 @@ end
 		turn_count(board)
 		display_board(board)
 	end
-	
+
 
 	def position_taken?(board, location)
 	  board[location] != " " && board[location] != ""
