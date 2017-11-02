@@ -38,7 +38,7 @@ end
 		!(board[index].nil? || board[index] == " ")
 	end
 	
-	  
+
 	end
 
 
