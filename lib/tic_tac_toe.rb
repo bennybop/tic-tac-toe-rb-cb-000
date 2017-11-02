@@ -35,7 +35,10 @@ end
 
 
 	def position_taken?(board, index)
-	  board[location] != " " && board[location] != ""
+		!(board[index].nil? || board[index] == " ")
+	end
+	
+	  
 	end
 
 
