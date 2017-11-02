@@ -55,7 +55,7 @@ end
 			until m == true
 				puts "Sorry, that was an invalid move. Please enter 1 - 9:"
 				display_board(board)
-				i = gets.strip 
+				i = gets.strip
 				index = input_to_index(i)
 				m = valid_move?(board, index)
 				move(board, index, current_player(board))
